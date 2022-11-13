@@ -1,0 +1,36 @@
+table {
+    width: 100%;
+}
+
+.mat-table {
+    background-color: transparent;
+    box-shadow: none;
+}
+.mat-header-cell, .mat-cell {
+    color: #000;
+}
+
+.mat-cell {
+    word-break: break-all;
+    padding-right: 2.5rem;
+}
+.mat-header-row {
+    background-color: transparent;
+ 
+}
+.mat-row {
+    background-color: #fff;
+    margin-bottom: 5px;
+    box-shadow: 1px 2px 3px #ccc;
+    border-radius: 5px;
+    height: 3rem;
+    color: #000;
+}
+.mat-field-form {
+    width: 30%;
+}
+.input {
+    border: 1px solid #000;
+    width: 30%;
+}
+ 

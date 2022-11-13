@@ -1,0 +1,17 @@
+<div class="container">
+        <mat-form-field 
+        appearance="outline" 
+        color="primary"
+       >
+       <mat-label>Name</mat-label>
+       <input (keyup)="applyFilter($event)" matInput placeholder="Search here..." required>
+     </mat-form-field>
+    <mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8" matSort #empTbSort="matSort">
+        <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+            <mat-header-cell *matHeaderCellDef mart-sort-header="column">{{ column }}</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element[column]}} </mat-cell>
+          </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+</div>
